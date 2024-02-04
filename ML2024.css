@@ -80,6 +80,10 @@ h5 {
     color: red;
 }
 
+.annotation {
+  color: orangered;
+}
+
 p {
     font-family: "Times New Roman", sans-serif;
     line-height: 3px;
