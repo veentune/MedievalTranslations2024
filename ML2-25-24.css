@@ -56,3 +56,15 @@ body {
 l {
     padding-left: 10em;
 }
+br {
+    line-height: .2;
+}
+
+em {
+}
+
+lg {
+    font-family: "Times New Roman", sans-serif;
+    line-height: 20px;
+    padding-left: 50px;
+}
