@@ -2,7 +2,7 @@
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  border-bottom: 1px dashed; black; /* If you want dots under the hoverable text */
 }
 
 /* Tooltip text */
@@ -48,8 +48,8 @@
 body {
     background: #FFF;
     padding: 2em;
-    border: 1px solid;
-    border-color: black;
+    border: 10px solid;
+    border-color: darkred;
     width: 70%;
 }
 
@@ -63,7 +63,16 @@ table {
 }
 
 tr {
-    font-family: "Times New Roman", sans-serif;
+    font-family: "Georgia", sans-serif;
     line-height: 24px;
     padding-left: 50px;
 }
+
+div {
+  width: 300px;
+  border: 15px solid blue;
+  padding: 50px;
+  margin: 20px;
+}
+
+p.solid {outline-style: solid;}
