@@ -1,3 +1,5 @@
+
+
 /* Tooltip container */
 .tooltip {
   position: relative;
@@ -124,7 +126,7 @@ p.solid {outline-style: solid;}
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
-</style>
+/*</style>
 
 <div class="dropdown">
   <button class="dropbtn">Dropdown</button>
@@ -133,4 +135,4 @@ p.solid {outline-style: solid;}
     <a href="#">Link 2</a>
     <a href="#">Link 3</a>
   </div>
-</div>
+</div>*/
