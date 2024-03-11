@@ -47,10 +47,41 @@
   opacity: 1;
 }
 
+
+.poem {
+  display: grid;
+  column-gap: 50px;
+  row-gap: 50px;
+}
+
+.erthe1{
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.erthe2{
+  grid-row: 2;
+}
+
+.erthe3{
+  grid-row: 3;
+}
+
+.erthe4{
+  grid-row: 4;
+}
+
+.erthe5{
+  grid-row: 5;
+}
+
+
 .grid-container {
   display: grid;
   gap: 50px 100px;
 }
+
+
 
 body {
     background: #FFF;
