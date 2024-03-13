@@ -50,8 +50,13 @@
 
 .poem {
   display: grid;
-  column-gap: 50px;
-  row-gap: 50px;
+  column-gap: 25px;
+  row-gap: 25px;
+  justify-content: space-evenly;
+}
+
+.item1 {
+  grid-column: 1 / 5;
 }
 
 .erthe1{
