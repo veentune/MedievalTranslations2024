@@ -55,10 +55,6 @@
   justify-content: space-evenly;
 }
 
-.item1 {
-  grid-column: 1 / 5;
-}
-
 .erthe1{
   grid-row: 1;
   grid-column: 2;
@@ -190,7 +186,7 @@ a:hover {
 
 /* selected link */
 a:active {
-  color: blue;
+  color: skyblue;
 }
 /*</style>
 
