@@ -50,15 +50,17 @@
 
 .poem {
   display: grid;
-  column-gap: 25px;
-  row-gap: 25px;
+  column-gap: 20px;
+  row-gap: 20px;
   justify-content: space-evenly;
+  grid-template-columns: auto auto;
 }
 
 
 .erthe0{
   grid-row: 1;
-  grid-column: 1/2;
+  grid-column-start: 1 / 2;
+
 }
 
 .erthe1{
@@ -83,6 +85,7 @@
 
 .erthe5{
   grid-row: 4;
+  grid-column: 1;
 }
 
 
@@ -94,10 +97,10 @@
 
 
 body {
-    background: #FFF;
+    background: whitesmoke;
     padding: 2em;
     border: 10px solid;
-    border-color: darkred;
+    border-color: cadetblue;
     width: 70%;
 }
 
@@ -112,7 +115,7 @@ head {
 }
 
 table {
-  background: skyblue;
+  background: white;
 }
 
 tr {
