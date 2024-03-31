@@ -200,15 +200,30 @@ a:active {
   color: skyblue;
 }
 
-.button {
-  background-color: #04AA6D; /* Green */
+button {
+  background-color: skyblue; 
   border: none;
-  color: white;
-  padding: 15px 32px;
+  color: darkblue;
+  padding: 10px 24px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  border-radius: 4px;
+  border: 2px solid dodgerblue; 
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  width: 100%;
+
+}
+
+button {
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: skyblue; 
+  color: white;
 }
 
 /*</style>
