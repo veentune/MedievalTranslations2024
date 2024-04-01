@@ -126,6 +126,24 @@ document.getElementById("myBtn").addEventListener("click", myFunction);
 function myFunction() {
   console.log ("Hello World!");
 }
+
+var x = document.getElementById("myBtn");
+x.addEventListener("click", myFunction);
+x.addEventListener("click", someOtherFunction);
+x.addEventListener("click", someOtherOtherFunction);
+
+function myFunction() {
+  alert ("alliteration");
+}
+
+function someOtherFunction() {
+  alert ("end rhyme");
+}
+
+function someOtherOtherFunction() {
+  alert ("internal rhyme");
+}
+
 </script>
 
 <!--// allow the user to progress to the subsequent page 
