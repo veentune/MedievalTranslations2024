@@ -89,7 +89,7 @@
 	
 		<div><table> 
 
-		<tr><td> Erþe toc of erþe erþe wyþ woh </td></tr> 
+		<tr><td>Erþe toc of erþe erþe wyþ <span id="endrhyme1"> woh </span></td></tr> 
 		
 		<tr><td>Erþe oþer erþe to þe the erþe droh </td></tr>
 
@@ -97,25 +97,15 @@
 
 		<tr><td>þo hevede erþe of erþe erþe ynoh </td></tr>
 
-		<tr><td><button id="myBtn" type="button">SOUND EFFECTS</button></td></tr>
+		<tr><td><button id="myBtn" onclick="rabbit(1)" type="button">alliteration</button></td></tr>
+		<tr><td><button id="myBtn" onclick="rabbit(2)" type="button">internal rhyme</button></td></tr>
+		<tr><td><button id="myBtn" onclick="rabbit(3)" type="button">end rhyme</button></td></tr>
+
 
 	</table></div></div>
 
-
-
 <br>
 
-<!--Sources: 1. Gutenberg: https://www.gutenberg.org/files/33768/33768-h/33768-h.htm#intro_versions and 2. TEAMS: https://d.lib.rochester.edu/teams/text/fein-harley2253-volume-2-article-24b-introduction-->
-
-<!--// the buttons that open and close sections
-function toggle(id) {
-  var state = document.getElementById(id).style.display;
-    if (state == 'block') {
-      document.getElementById(id).style.display = 'none';
-    } else {
-      document.getElementById(id).style.display = 'block';
-    }
-  }-->
 
 </html>
 
@@ -131,6 +121,14 @@ var x = document.getElementById("myBtn");
 x.addEventListener("click", myFunction);
 x.addEventListener("click", someOtherFunction);
 x.addEventListener("click", someOtherOtherFunction);
+
+function rabbit (carrot) {
+	alert (carrot);
+	if (carrot < 20) {
+  document.getElementById("endrhyme1").innerHTML = "carrots are the best";}
+  if (carrot==2) {document.getElementById("endrhyme1").style.color="red";}
+
+}
 
 function myFunction() {
   alert ("alliteration");
@@ -153,3 +151,14 @@ function someOtherOtherFunction() {
 		document.getElementById("id_pagination").value = pagevalue;
 		document.getElementById("form").submit(); 
 	}-->
+<!--Sources: 1. Gutenberg: https://www.gutenberg.org/files/33768/33768-h/33768-h.htm#intro_versions and 2. TEAMS: https://d.lib.rochester.edu/teams/text/fein-harley2253-volume-2-article-24b-introduction-->
+
+<!--// the buttons that open and close sections
+function toggle(id) {
+  var state = document.getElementById(id).style.display;
+    if (state == 'block') {
+      document.getElementById(id).style.display = 'none';
+    } else {
+      document.getElementById(id).style.display = 'block';
+    }
+  }-->
