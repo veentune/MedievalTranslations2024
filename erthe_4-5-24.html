@@ -89,13 +89,13 @@
 	
 		<div><table> 
 
-		<tr><td>Erþe toc of erþe erþe wyþ <span id="endrhyme1"> woh </span></td></tr> 
+		<tr><td>Erþe toc of erþe erþe wyþ <span id="endrhyme"> woh </span></td></tr> 
 		
-		<tr><td>Erþe oþer erþe to þe the erþe <span id="endrhyme1"> droh </span></td></tr>
+		<tr><td>Erþe oþer erþe to þe the erþe <span id="endrhyme"> droh </span></td></tr>
 
-		<tr><td>Erþe leyde erþe in erþene <span id="endrhyme1"> þroh </span></td></tr>
+		<tr><td>Erþe leyde erþe in erþene <span id="endrhyme"> þroh </span></td></tr>
 
-		<tr><td>þo hevede erþe of erþe erþe <span id="endrhyme1">ynoh </span></td></tr>
+		<tr><td>þo hevede erþe of erþe erþe <span id="endrhyme">ynoh </span></td></tr>
 
 		<tr><td><button id="myBtn" onclick="rabbit(1)" type="button">alliteration</button></td></tr>
 		<tr><td><button id="myBtn" onclick="rabbit(2)" type="button">internal rhyme</button></td></tr>
@@ -125,7 +125,8 @@ x.addEventListener("click", someOtherOtherFunction);
 function rabbit (carrot) {
 	alert (carrot);
 	if (carrot==1) {document.getElementById("alliteration").style.color="red";}
-  if (carrot==3) {document.getElementById("endrhyme1").style.color="red";}
+	if (carrot==2) {document.getElementById("internalrhyme").style.color="red";}
+  if (carrot==3) {document.getElementById("endrhyme").style.color="red";}
 
 }
 
@@ -133,12 +134,12 @@ function myFunction() {
   alert ("alliteration");
 }
 
-function someOtherFunction() {
-  alert ("end rhyme");
+function someOtherOtherFunction() {
+  alert ("internalrhyme");
 }
 
-function someOtherOtherFunction() {
-  alert ("internal rhyme");
+function someOtherFunction() {
+  alert ("endrhyme");
 }
 
 </script>
