@@ -89,17 +89,17 @@
 	
 		<div><table> 
 
-		<tr><td>Erþe toc of erþe erþe wyþ <span id="endrhyme"> woh </span></td></tr> 
+		<tr><td><span id="alliteration"> E </span>r<span id="internalrhyme"> þ </span>e toc of <span id="allteration"> e </span>r<span id="internalrhyme"> þ </span>e <span id="allteration"> e </span>r<span id="internalrhyme"> þ </span>e wyþ <span id="endrhyme"> woh </span></td></tr> 
 		
-		<tr><td>Erþe oþer erþe to þe the erþe <span id="endrhyme"> droh </span></td></tr>
+		<tr><td><span id="alliteration"> E </span>r<span id="internalrhyme"> þ </span>e o<span id="internalrhyme"> þ </span>er <span id="allteration"> e </span>r<span id="internal rhyme"> þ </span>e to <span id="internal rhyme"> þ </span>e the <span id="allteration"> e </span>r<span id="internalrhyme"> þ </span>e <span id="endrhyme"> droh </span></td></tr>
 
-		<tr><td>Erþe leyde erþe in erþene <span id="endrhyme"> þroh </span></td></tr>
+		<tr><td><span id="alliteration"> E </span>r<span id="internalrhyme"> þ </span>e leyde <span id="allteration"> e </span>r<span id="internalrhyme"> þ </span>e in <span id="allteration"> e </span>r<span id="internalrhyme"> þ </span>ene <span id="endrhyme"> <span id="internalrhyme"> þ </span>roh </span></td></tr>
 
-		<tr><td>þo hevede erþe of erþe erþe <span id="endrhyme">ynoh </span></td></tr>
+		<tr><td><span id="internalrhyme"> þ </span>o hevede <span id="allteration"> e </span>r<span id="internalrhyme"> þ </span>e of <span id="allteration"> e </span>r<span id="internalrhyme"> þ </span>e <span id="allteration"> e </span>r<span id="internalrhyme"> þ </span>e <span id="endrhyme"> ynoh </span></td></tr>
 
-		<tr><td><button id="myBtn" onclick="rabbit(1)" type="button">alliteration</button></td></tr>
-		<tr><td><button id="myBtn" onclick="rabbit(2)" type="button">internal rhyme</button></td></tr>
-		<tr><td><button id="myBtn" onclick="rabbit(3)" type="button">end rhyme</button></td></tr>
+		<tr><td><button id="myBtn1" onclick="rabbit(1)" type="button">alliteration</button></td></tr>
+		<tr><td><button id="myBtn2" onclick="rabbit(2)" type="button">internal rhyme</button></td></tr>
+		<tr><td><button id="myBtn3" onclick="rabbit(3)" type="button">end rhyme</button></td></tr>
 
 
 	</table></div></div>
@@ -111,13 +111,24 @@
 
 <script>
 
-document.getElementById("myBtn").addEventListener("click", myFunction);
+document.getElementById("myBtn1").addEventListener("click", myFunction);
 
 function myFunction() {
   console.log ("Hello World!");
 }
 
-var x = document.getElementById("myBtn");
+var x = document.getElementById("myBtn1");
+x.addEventListener("click", myFunction);
+x.addEventListener("click", someOtherFunction);
+x.addEventListener("click", someOtherOtherFunction);
+
+document.getElementById("myBtn2").addEventListener("click", myFunction);
+
+function myFunction() {
+  console.log ("Hello World!");
+}
+
+var x = document.getElementById("myBtn2");
 x.addEventListener("click", myFunction);
 x.addEventListener("click", someOtherFunction);
 x.addEventListener("click", someOtherOtherFunction);
