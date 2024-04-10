@@ -89,7 +89,7 @@
 	
 		<div><table> 
 
-		<tr><td><span id="alliteration">E</span>r<span id="internalrhyme">þ</span>e toc of <span id="allteration">e</span>r<span id="internalrhyme">þ</span>e <span id="allteration">e</span>r<span id="internalrhyme">þ</span>e wyþ <span id="endrhyme"> woh </span></td></tr> 
+		<tr><td><span id="alliteration" class="all1">E</span>r<span id="internalrhyme">þ</span>e toc of <span id="allteration"class="all1">e</span>r<span id="internalrhyme">þ</span>e <span id="allteration">e</span>r<span id="internalrhyme">þ</span>e wyþ <span id="endrhyme"> woh </span></td></tr> 
 		
 		<tr><td><span id="alliteration">E</span>r<span id="internalrhyme">þ</span>e o<span id="internalrhyme">þ</span>er <span id="allteration">e</span>r<span id="internal rhyme">þ</span>e to <span id="internal rhyme">þ</span>e the <span id="allteration">e</span>r<span id="internalrhyme">þ</span>e <span id="endrhyme"> droh </span></td></tr>
 
@@ -118,12 +118,20 @@ function myFunction() {
 }
 
 function rabbit (carrot) {
-	alert (carrot);
-	if (carrot==1) {document.getElementById("alliteration").style.color="blue";}
+	if (carrot==1) {document.getElementById("alliteration").style.color="blue";
+	var el = document.getElementById("alliteration");
+  el.style.color = "red";
+  const collection = document.getElementsByClassName("all1");
+	for (let i = 0; i < collection.length; i++) {
+  collection[i].style.backgroundColor = "red";
+}
+}
 	if (carrot==2) {document.getElementById("internalrhyme").style.color="green";}
   if (carrot==3) {document.getElementById("endrhyme").style.color="red";}
 
 }
+
+
 
 </script>
 
