@@ -89,13 +89,13 @@
 	
 		<div><table> 
 
-		<tr><td><span id="alliteration" class="all1">E</span>r<span id="internalrhyme">þ</span>e toc of <span id="allteration"class="all1">e</span>r<span id="internalrhyme">þ</span>e <span id="allteration">e</span>r<span id="internalrhyme">þ</span>e wyþ <span id="endrhyme"> woh </span></td></tr> 
+		<tr><td><span id="alliteration" class="all1">E</span>r<span id="internalrhyme" class="ir1">þ</span>e toc of <span id="allteration"class="all1">e</span>r<span id="internalrhyme" class="ir1">þ</span>e <span id="allteration" class="all1">e</span>r<span id="internalrhyme" class="ir1">þ</span>e wyþ <span id="endrhyme" class="er1"> woh </span></td></tr> 
 		
-		<tr><td><span id="alliteration">E</span>r<span id="internalrhyme">þ</span>e o<span id="internalrhyme">þ</span>er <span id="allteration">e</span>r<span id="internal rhyme">þ</span>e to <span id="internal rhyme">þ</span>e the <span id="allteration">e</span>r<span id="internalrhyme">þ</span>e <span id="endrhyme"> droh </span></td></tr>
+		<tr><td><span id="alliteration" class="all1">E</span>r<span id="internalrhyme" class="ir1">þ</span>e o<span id="internalrhyme" class="ir1">þ</span>er <span id="allteration" class="all1">e</span>r<span id="internal rhyme" class="ir1">þ</span>e to <span id="internal rhyme" class="ir1">þ</span>e the <span id="allteration" class="all1">e</span>r<span id="internalrhyme" class="ir1">þ</span>e <span id="endrhyme" class="er1"> droh </span></td></tr>
 
-		<tr><td><span id="alliteration">E</span>r<span id="internalrhyme">þ</span>e leyde <span id="allteration">e</span>r<span id="internalrhyme">þ</span>e in <span id="allteration">e</span>r<span id="internalrhyme">þ</span>ene <span id="endrhyme"> <span id="internalrhyme">þ</span>roh </span></td></tr>
+		<tr><td><span id="alliteration" class="all1">E</span>r<span id="internalrhyme" class="ir1">þ</span>e leyde <span id="allteration" class="all1">e</span>r<span id="internalrhyme" class="ir1">þ</span>e in <span id="allteration" class="all1">e</span>r<span id="internalrhyme" class="ir1">þ</span>ene <span id="endrhyme" class="er1"> <span id="internalrhyme" class="ir1">þ</span>roh </span></td></tr>
 
-		<tr><td><span id="internalrhyme">þ</span>o hevede <span id="allteration">e</span>r<span id="internalrhyme">þ</span>e of <span id="allteration">e</span>r<span id="internalrhyme">þ</span>e <span id="allteration">e</span>r<span id="internalrhyme">þ</span>e <span id="endrhyme"> ynoh </span></td></tr>
+		<tr><td><span id="internalrhyme" class="ir1">þ</span>o hevede <span id="allteration" class="all1">e</span>r<span id="internalrhyme" class="ir1">þ</span>e of <span id="allteration" class="all1">e</span>r<span id="internalrhyme" class="ir1">þ</span>e <span id="allteration" class="all1">e</span>r<span id="internalrhyme" class="ir1">þ</span>e <span id="endrhyme" class="er1"> ynoh </span></td></tr>
 
 		<tr><td><button id="myBtn" onclick="rabbit(1)" type="button">alliteration</button></td></tr>
 		<tr><td><button id="myBtn" onclick="rabbit(2)" type="button">internal rhyme</button></td></tr>
@@ -123,12 +123,22 @@ function rabbit (carrot) {
   el.style.color = "red";
   const collection = document.getElementsByClassName("all1");
 	for (let i = 0; i < collection.length; i++) {
-  collection[i].style.backgroundColor = "red";
+  collection[i].style.backgroundColor = "skyblue";
 }
 }
-	if (carrot==2) {document.getElementById("internalrhyme").style.color="green";}
+	if (carrot==2) {document.getElementById("internalrhyme").style.color="green";
+	var el = document.getElementById("internalrhyme");
+  el.style.color = "red";
+  const collection = document.getElementsByClassName("ir1");
+	for (let i = 0; i < collection.length; i++) {
+  collection[i].style.backgroundColor = "yellow";
+}
   if (carrot==3) {document.getElementById("endrhyme").style.color="red";}
-
+	var el = document.getElementById("endrhyme");
+  el.style.color = "red";
+  const collection = document.getElementsByClassName("er1");
+	for (let i = 0; i < collection.length; i++) {
+  collection[i].style.backgroundColor = "orange";
 }
 
 
