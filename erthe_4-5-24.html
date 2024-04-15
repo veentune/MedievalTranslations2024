@@ -19,6 +19,16 @@
 </header>
 </div>
 
+<div class="erthe6">
+<br>
+	<h2> Manuscript image </h2>
+
+	<div><table>
+		<img src="https://drive.google.com/file/d/1t17RyUaEB0Y3xquCGOxMUHbn8NzP4KtN/view?usp=sharing" alt ="Harley Lyrics 2253";
+		width="128" height="128">
+
+	</table></div></div>
+
 <div class="erthe1">
 <br> 
 		<h2> Transcribed directly from manuscript </h2>
@@ -118,17 +128,23 @@ function myFunction() {
 }
 
 function rabbit (carrot) {
-	if (carrot==1) {document.getElementById("alliteration").style.color="blue";
-	var el = document.getElementById("alliteration");
-  el.style.color = "red";
+	if (carrot==1) {document.getElementById("alliteration");
   const collection = document.getElementsByClassName("all1");
 	for (let i = 0; i < collection.length; i++) {
-  collection[i].style.backgroundColor = "skyblue";}
+  collection[i].style.backgroundColor = "plum";}
 
 }
-	if (carrot==2) {document.getElementById("internalrhyme").style.color="green";}
+	if (carrot==2) {document.getElementById("internalrhyme");
+  const collection = document.getElementsByClassName("ir1");
+	for (let i = 0; i < collection.length; i++) {
+  collection[i].style.backgroundColor = "orchid";}
+}
 	
-  if (carrot==3) {document.getElementById("endrhyme").style.color="red";}
+  if (carrot==3) {document.getElementById("endrhyme");
+  const collection = document.getElementsByClassName("er1");
+	for (let i = 0; i < collection.length; i++) {
+  collection[i].style.backgroundColor = "hotpink";}
+}
 
 }
 
